@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.45/moment-timezone-with-data-1970-2030.min.js"></script>
     <title>World Clock</title>
     <div class="container">
     <h1>World Clock</h1>
@@ -17,10 +19,9 @@
 
     </select>
 
-    <div class="cities">
+    <div class="cities" id="istanbul">
         <div>
-            <h1>Istanbul</h1>
-        
+            <h1>Istanbul</h1>  
         <div class="date">7 April</div>
 </div>
         <div class="time">10 <small>AM</small></div>
@@ -29,6 +30,18 @@
 
     </div>
 
+    <div class="cities" id="paris">
+        <div>
+            <h1>Paris</h1>
+            <div class="date">7 April</div>
+        </div>
+        <div class="time">10 <small>AM</small></div>
+    
+    
+    
+    </div>
+
+
 </head>
 <body>
 
@@ -36,6 +49,6 @@
     
 
     <footer>This project was coded by Giulia Gaudio and is open sourced on <a href="https://github.com/GGaudio96/Clock-project" target="_blank">Github</a></footer>
-    <script src="index.js"></script>
+    <script src="javascript/index.js"></script>
 </body>
 </html>
