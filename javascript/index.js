@@ -23,8 +23,12 @@ ParisTimeElement.innerHTML = ParisTime.format("h:mm:ss [<small>]A[</small>]");
 
 }, 1000)
 
+
 function updateCity(event) {
+setInterval (function (){
     let cityTimeZone = event.target.value;
+   
+
     let cityName = cityTimeZone.replace("_", " ").split("/")[1];
     let cityTime = moment().tz(cityTimeZone);
     let citiesElement = document.querySelector("#cities");
@@ -36,8 +40,10 @@ function updateCity(event) {
 </div>
         <div class="time">${cityTime.format("h:mm:ss")}<small>${cityTime.format("A")}</small></div>
     </div>
-    `;
-    
+    `;}, 1000)
+     if (cityTimeZone === "current") {
+        cityTimeZone = moment.tz.guess();
+    }
 }
 
 
