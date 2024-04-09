@@ -40,6 +40,7 @@ setInterval (function (){
 </div>
         <div class="time">${cityTime.format("h:mm:ss")}<small>${cityTime.format("A")}</small></div>
     </div>
+    <a href="/">Back to homepage</a>
     `;}, 1000)
      if (cityTimeZone === "current") {
         cityTimeZone = moment.tz.guess();
